@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="get">
+    <input type="text" placeholder="kiriting" name="qidiruv_sozi">
+    <button>Qidirish</button>
+</form>
+{% for i in reja %}
+<h1>{{i}}</h1>
+<a href="/reja_ochir/{{i.id}}"><button>O'chirish</button></a>
+{% endfor %}
+<form method="post">{% csrf_token %}
+    {{form}}
+    <button>Saqlash</button>
+</form>
+</body>
+</html>

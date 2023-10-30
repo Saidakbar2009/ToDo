@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="get">
+    <input type="text" placeholder="kiriting" name="qidiruv_sozi">
+    <button>Qidirish</button>
+</form>
+{% for i in student %}
+<a href="/tanlangan_student/{{i.id}}"><h1>{{i}}</h1></a>
+{% endfor %}
+</body>
+</html>
