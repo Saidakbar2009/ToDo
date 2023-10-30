@@ -69,3 +69,5 @@ def tanlangan_student(request, son):
     }
     return render(request, 'tanlangan_rejalar.html', data)
 
+def asosiy(request):
+    return render(request, 'asosiy.html')

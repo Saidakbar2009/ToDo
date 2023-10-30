@@ -13,4 +13,5 @@ urlpatterns = [
     path('yoshi_kattalar/', yosh),
     path('bitiruvchilar_rejalari/', bitiruvchilar_rejalari),
     path('tanlangan_student/<int:son>/', tanlangan_student),
+    path('', asosiy),
 ]
